@@ -119,3 +119,5 @@ function pintar() {
     } 
     document.getElementById(atual).classList.add('atual')
 }
+
+// Deixando as bolinhas clicaveis

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <!-- <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico"> -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header id="inicio">
+        <nav>
+            <a href="index.html" class="nav-titulo">Portfólio</a>
+            <a href="#contato" class="nav-links">Contato</a>
+            <a href="#conhecimento" class="nav-links">Conhecimento</a>
+            <a href="#projetos" class="nav-links">Projetos</a>
+            <a href="#quem-sou" class="nav-links">Quem sou</a>
+            <hr size="3px">
+        </nav>
+        <div class="apresentacao">
+            <p style="line-height: 40px;">Olá, eu sou</p>
+            <h1 style="line-height: 50px;">Villy Rosa</h1>
+            <p style="line-height: 30px;">Estudante de programação, em busca de minha primeira oportunidade de emprego.</p>
+            <a href="https://github.com/VillyRosa" target="_blank"><button class="btn-git">GitHub</button></a>
+            <img src="imagens/digitando.gif" alt="gif-animado" class="gif-digitando">
+        </div>
+    </header>
+
+    <section id="quem-sou">
+        <div class="paragrafo">
+            <h1 style="line-height: 60px;">Quem sou</h1>
+            <p style="line-height: 35px;">Sou formado em técnico em desenvolvimento de sistemas,
+            estou cursando o segundo semestre em Análise e Desenvolvimento de
+            Sistemas na Fatec Araçatuba.</p>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <h1 id="titulo-projeto">Projetos</h1><br>
+            <p style="line-height: 30px;" id="descricao-projeto">Passe o mouse em algum projeto para que apareça sua descrição, ao clicar no projeto uma nova guia será aberta para apresentar o projeto.</p>
+        </div>
+        <div class="carrosel">
+            <i class="fas fa-chevron-left" id="btn-esquerda" onclick="voltar()"></i>
+            <i class="fas fa-chevron-right" id="btn-direita" onclick="passar()"></i>
+            <div class="itens">
+                <div class="slide">
+                    <div class="projeto" onclick="OpenProjetoViagem()" onmouseenter="enterProjetoViagem()" onmouseleave="resetarTexto()">
+                        <div class="cabecalho-card">
+                            <div class="nome-card">
+                                Villy Viagens
+                            </div>
+                        </div>
+                        <div class="imagem-projeto" id="img-viagem"></div>
+                    </div>
+                    <div class="projeto" onclick="OpenProjetoCloneInstagram()" onmouseenter="enterProjetoCloneInstagram()" onmouseleave="resetarTexto()">
+                        <div class="cabecalho-card">
+                            <div class="nome-card">
+                                Clone Instagram
+                            </div>
+                        </div>
+                        <div class="imagem-projeto" id="img-cloneInstagram"></div>
+                    </div>
+                    <div class="projeto" onclick="OpenProjetoCloneNetflix()" onmouseenter="enterProjetoCloneNetflix()" onmouseleave="resetarTexto()">
+                        <div class="cabecalho-card">
+                            <div class="nome-card">
+                                Clone Netflix
+                            </div>
+                        </div>
+                        <div class="imagem-projeto" id="img-cloneNetflix"></div>
+                    </div>
+                    <div class="projeto" onclick="OpenProjetoJogoCobrinha()" onmouseenter="enterProjetoJogoCobrinha()" onmouseleave="resetarTexto()">
+                        <div class="cabecalho-card">
+                            <div class="nome-card">
+                                Jogo da Cobrinha
+                            </div>
+                        </div>
+                        <div class="imagem-projeto" id="img-JogoCobrinha"></div>
+                    </div>
+                    <div class="projeto" onclick="OpenProjetoJogoMemoria()" onmouseenter="enterProjetoJogoMemoria()" onmouseleave="resetarTexto()">
+                        <div class="cabecalho-card">
+                            <div class="nome-card">
+                                Jogo da Memória
+                            </div>
+                        </div>
+                        <div class="imagem-projeto" id="img-Construcao"></div>
+                    </div>
+                    <div class="projeto" onclick="OpenProjetoCarrosel()" onmouseenter="enterProjetoCarrosel()" onmouseleave="resetarTexto()">
+                        <div class="cabecalho-card">
+                            <div class="nome-card">
+                                Carrosel de três itens
+                            </div>
+                        </div>
+                        <div class="imagem-projeto" id="img-Carrosel"></div>
+                    </div>  
+                </div>  
+            </div>
+            <div class="alinhar">
+                <div class="balls">
+    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="conhecimento">
+        
+    </section>
+
+    <section id="contato">
+        
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      	  anchor.addEventListener('click', function (e) {
+     	  	  e.preventDefault();
+
+     	   	  document.querySelector(this.getAttribute('href')).scrollIntoView({
+     	          behavior: 'smooth'
+     	      });
+   	      });
+	  });
+    </script>
+</body>
+</html>

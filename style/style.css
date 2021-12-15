@@ -243,27 +243,27 @@ header .apresentacao .gif-digitando{
 }
 
 #projetos .itens .projeto #img-viagem{
-    background-image: url('../imagens/projeto-viagem.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
+    background-image: url('../imagens/imgs-projeto/projeto-viagem.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
 }
 
 #projetos .itens .projeto #img-cloneInstagram{
-    background-image: url('../imagens/projeto-cloneInstagram.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
+    background-image: url('../imagens/imgs-projeto/projeto-cloneInstagram.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
 }
 
 #projetos .itens .projeto #img-cloneNetflix{
-    background-image: url('../imagens/projeto-cloneNetflix.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
+    background-image: url('../imagens/imgs-projeto/projeto-cloneNetflix.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
 }
 
 #projetos .itens .projeto #img-JogoCobrinha{
-    background-image: url('../imagens/projeto-JogoCobrinha.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
+    background-image: url('../imagens/imgs-projeto/projeto-JogoCobrinha.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
 }
 
 #projetos .itens .projeto #img-Construcao{
-    background-image: url('../imagens/projeto-Construcao.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
+    background-image: url('../imagens/imgs-projeto/projeto-Construcao.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
 }
 
 #projetos .itens .projeto #img-Carrosel{
-    background-image: url('../imagens/projeto-Carrosel.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
+    background-image: url('../imagens/imgs-projeto/projeto-Carrosel.jpg'); /* DEIXAR A IMAGEM 180px LARGURA POR 225px ALTURA */
 }
 
 #projetos .itens .projeto .cabecalho-card .nome-card{
@@ -296,7 +296,6 @@ header .apresentacao .gif-digitando{
     transition: all 0.5s;
     border: 3px solid white;
     border-radius: 50%;
-    cursor: pointer;
     width: 7px;
     height: 7px;
     right: 50%;
@@ -311,6 +310,20 @@ header .apresentacao .gif-digitando{
     width: 100%;
     height: 500px;
     background-color: #06050ac7;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    font-size: 18pt;
+}
+
+#conhecimento img{
+    transition: all 0.5s;
+    width: 80px;
+    margin-top: -30px;
+    margin-left: 15px;
+}
+
+#conhecimento img:hover{
+    width: 85px;
 }
 
 #contato{

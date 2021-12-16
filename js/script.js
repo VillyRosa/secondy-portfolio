@@ -148,3 +148,8 @@ function javascript() {
     nome.innerHTML = 'Java Script'
     img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
 }
+
+function csharp() {
+    nome.innerHTML = 'Csharp'
+    img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg'
+}

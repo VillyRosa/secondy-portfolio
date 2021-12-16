@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosel</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1>Carrosel de três imagens</h1>
+    <div class="botoes">
+        <i class="fas fa-chevron-left" id="btn-esquerda" onclick="voltar()"></i>
+        <i class="fas fa-chevron-right" id="btn-direita" onclick="avancar()"></i>
+    </div>
+    <section id="container">
+        <div class="slides">
+            <img src="imagens/img1.jpg" alt="" class="image">
+            <img src="imagens/img2.jpg" alt="" class="image">
+            <img src="imagens/img3.jpg" alt="" class="image">
+            <img src="imagens/img4.jpg" alt="" class="image">
+            <img src="imagens/img5.jpg" alt="" class="image">
+            <img src="imagens/img6.jpg" alt="" class="image">
+            <img src="imagens/img7.jpg" alt="" class="image">
+            <img src="imagens/img8.jpg" alt="" class="image">
+            <img src="imagens/img9.jpg" alt="" class="image">
+        </div>
+        <div class="balls">
+            <div id="1" onclick="bolinha1()"></div>
+            <div id="2" onclick="bolinha2()"></div>
+            <div id="3" onclick="bolinha3()"></div>
+        </div>
+    </section>
+
+    <script src="js/carrosel.js"></script>
+</body>
+</html>

@@ -120,4 +120,31 @@ function pintar() {
     document.getElementById(atual).classList.add('atual')
 }
 
-// Deixando as bolinhas clicaveis
+// Conhecimento
+var nome = document.querySelector('#nome-indicativo')
+var img = document.querySelector('#image')
+
+function saiu() {
+    nome.innerHTML = ''
+    img.src = ''
+}
+
+function html5() {
+    nome.innerHTML = 'Html5'
+    img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+}
+
+function css3() {
+    nome.innerHTML = 'Css3'
+    img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+}
+
+function git() {
+    nome.innerHTML = 'Git'
+    img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
+}
+
+function javascript() {
+    nome.innerHTML = 'Java Script'
+    img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+}

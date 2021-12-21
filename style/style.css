@@ -118,6 +118,13 @@ header .apresentacao .gif-digitando{
     font-size: 20pt;
 }
 
+#quem-sou .fotografia{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 60px;
+    object-fit: cover;
+}
+
 #quem-sou .paragrafo{
     float: right;
     text-align: justify;
@@ -196,7 +203,6 @@ header .apresentacao .gif-digitando{
     margin-right: 50px;
     display: flex;
     align-items: stretch;
-    
     /* background-color: pink; */
     overflow: hidden;
 }
@@ -349,7 +355,7 @@ header .apresentacao .gif-digitando{
     /* background-color: pink; */
     text-align: center;
     margin-top: 250px;
-    position:absolute;
+    position: absolute;
 }
 
 #conhecimento .aprendendo{
@@ -391,4 +397,27 @@ footer{
     width: 100%;
     height: 50px;
     background-color: #06050ac7;
+    display: flex;
+    align-items: center;
+}
+
+footer .icones{
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: yellow; */
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer i{
+    color: white;
+    font-size: 18pt;
+    position: relative;
+    margin-left: 20px;
+    transition: all 0.5s;
+}
+
+footer i:hover{
+    color: rgb(10, 186, 255);
 }

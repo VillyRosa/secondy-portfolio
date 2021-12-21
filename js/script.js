@@ -1,3 +1,13 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+         e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+       });
+     });
+});
+
 // Funções para abrir os projetos
 function OpenProjetoViagem() {
     window.open('projetos/viagem/index.html', '_blank')
@@ -152,4 +162,24 @@ function javascript() {
 function csharp() {
     nome.innerHTML = 'Csharp'
     img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg'
+}
+
+//Abrindo as novas guias do Contato
+
+function OpenTel() {
+    window.open('http://api.whatsapp.com/send?1=pt_BR&phone=5518988169921', '_blank')
+}
+
+function OpenEmail() {
+    window.open('mailto:villyrosa@hotmail.com', '_blank')
+}
+
+function BaixarCurriculo() {
+    var file_path = 'curriculo/Currículo - Villy oliveira Rosa.pdf'
+    var a = document.createElement('A')
+    a.href = file_path
+    a.download = file_path.substr(file_path.lastIndexOf('/') + 1)
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
 }

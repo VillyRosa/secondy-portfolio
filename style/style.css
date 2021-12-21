@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     text-decoration: none;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
 body{
@@ -391,6 +392,65 @@ header .apresentacao .gif-digitando{
     width: 100%;
     height: 500px;
     background-color: #110E1B;
+    display: flex;
+    align-items: center;
+}
+
+#contato .boxes{
+    display: flex;
+    align-items: center;
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contato .boxes .box{
+    width: 250px;
+    height: 250px;
+    /* background-color: green; */
+    border-radius: 16px;
+    border: 5.5px solid white;
+    box-shadow: 0px 0px 15px 3px white;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+#contato .boxes .box:hover{
+    background-color: #09070E;
+    border: 5.5px solid black;
+    box-shadow: 0px 0px 15px 3px black;
+    color: rgba(255, 255, 255, 0.596);
+    cursor: pointer;
+}
+
+#contato .boxes .box .alinhar-i{
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: yellow; */
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+#contato .boxes .box i{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    position: relative;
+    font-size: 25px;
+}
+
+#contato .boxes .box h1{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#contato .boxes .box p{
+    margin-top: -5px;
+    text-align: center;  
 }
 
 footer{
